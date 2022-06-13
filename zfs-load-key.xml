@@ -21,7 +21,7 @@
 
 	<dependent
 		name='zones'
-		grouping='optional_all'
+		grouping='require_all'
 		restart_on='none'>
 		<service_fmri value='svc:/system/zones:default' />
 	</dependent>
