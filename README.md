@@ -25,6 +25,12 @@ Load the key for all datasets:
 $ pfexec zfs load-key <dataset>
 ```
 
+Mount all filesystems:
+
+```
+$ pfexec zfs mount -a
+```
+
 Restart the service, the zones service will be restarted automatically:
 
 ```
