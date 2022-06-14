@@ -16,3 +16,17 @@ $ pfexec svccfg import zfs-load-key.xml
 ```
 $ pfexec zfs set ch.kzone:keylocation=http://example.com:8080/ pool/dataset
 ```
+
+### Start zones without the web server
+
+Load the key for all datasets:
+
+```
+$ pfexec zfs load-key <dataset>
+```
+
+Restart the service, the zones service will be restarted automatically:
+
+```
+$ pfexec svcadm clear svc:/system/zfs-load-key:default
+```
